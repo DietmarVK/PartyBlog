@@ -12,14 +12,13 @@ public class PartyBlogEntry {
     private String eMail;
     private String comment;
     private int rate;
-    private String rateStars;
+    private String rateStars = "";
 
     public PartyBlogEntry(String nickname, String eMail, String comment, int rate) {
         this.nickname = nickname;
         this.eMail = eMail;
         this.comment = comment;
         this.rate = rate;
-        this.rateStars = "";
     }
 
     public PartyBlogEntry() {
@@ -103,6 +102,7 @@ public class PartyBlogEntry {
     }
 
     public String transformRateToStars() {
+        System.out.println(rateStars);
         for (int i = this.rate; i > 0; i--) {
             this.rateStars += "*";
         }
@@ -115,10 +115,5 @@ public class PartyBlogEntry {
                         + "<p>%s</p>"
                         + "<p>%s</p>", this.nickname, this.eMail, this.comment, this.transformRateToStars());
         return htmlString;
-    }
-
-    @Override
-    public String toString() {
-        return "PartyBlogEntry{" + "nickname=" + nickname + ", eMail=" + eMail + ", comment=" + comment + ", rate=" + rate + '}';
     }
 }

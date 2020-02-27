@@ -43,7 +43,7 @@ public class PartyServlet extends HttpServlet {
             out.println("<body>");
             request.getRequestDispatcher("partyForm.html").include(request, response);
             for (PartyBlogEntry entry : model.getAllEntries()) {
-                out.println(entry.toString());
+                out.println(entry.toHTMLString());
                 out.print("<br>");
             }
             out.println("<hr>");
