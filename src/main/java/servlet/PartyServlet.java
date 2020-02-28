@@ -40,7 +40,7 @@ public class PartyServlet extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("</head>");
-            out.println("<body>");
+            out.println("<body bgcolor=\"#E6E6FA\">");
             request.getRequestDispatcher("partyForm.html").include(request, response);
             for (PartyBlogEntry entry : model.getAllEntries()) {
                 out.println(entry.toHTMLString());
@@ -53,7 +53,7 @@ public class PartyServlet extends HttpServlet {
             Logger.getLogger(PartyServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -109,5 +109,4 @@ public class PartyServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

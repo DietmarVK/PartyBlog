@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>PartyBlog</title>
-    </head>
-    <body bgcolor="#AABBCC">
-        <h1>Please write your comment to our party-blog</h1>
-        <form id="formEingabe" method="post" action="PartyServlet">
-            <label for="nickname">nickname:</label>
-            <input type="text" name="nickname" id="nickname" style="margin-left: 120px">
-            <br>
-            <label for="eMail">eMail:</label>
-            <input type="text" name="eMail" id="eMail" style="margin-left: 145px">
-            <br>
-            <label for="comment">comment:</label>
-            <textarea name="comment" id="comment" style="margin-left: 123px"></textarea>
-            <br>
-            <label for="rate">rate (between 1 and 5):</label>
-            <input type="text" name="rate" id="rate" style="margin-left: 40px">
-            <br>
-        </form> 
-        <button type="submit" form="formEingabe" value="true" name="requestSend">send</button> 
-        <hr>
-    </body>
-</html>
+<h1>Please write your comment to our party-blog</h1>
+<form id="formEingabe" method="post" action="PartyServlet">
+    <label for="nickname">nickname:</label>
+    <input type="text" name="nickname" id="nickname" style="margin-left: 120px">
+    <br>
+    <label for="eMail">eMail:</label>
+    <input type="text" name="eMail" id="eMail" style="margin-left: 145px">
+    <br>
+    <label for="comment">comment:</label>
+    <textarea name="comment" id="comment" style="margin-left: 123px"></textarea>
+    <br>
+    <label for="rate">rate (between 1 and 5):</label>
+    <input type="text" name="rate" id="rate" style="margin-left: 40px">
+    <br>
+</form> 
+<button type="submit" form="formEingabe" value="true" name="requestSend">send</button> 
+<hr>
