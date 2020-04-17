@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author HEILJulian
+ * @author HEIL Julian
  */
 public class PartyBlogModel {
 
